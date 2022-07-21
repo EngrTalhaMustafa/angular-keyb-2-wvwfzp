@@ -1,0 +1,26 @@
+<section
+  appInteractivity
+  ss="sdsdf"
+  [items]="items"
+  class="list-group"
+  tabindex="0"
+>
+  <app-list-item
+    *ngFor="let user of users"
+    [item]="user"
+    class="list-group-item"
+  >
+    {{ user.name }}
+  </app-list-item>
+</section>
+
+<p style="margin-top: 1em" *ngIf="model">Model: {{ model }}</p>
+
+
+<button appInteractivity [items]="">sdf</button>
+<!-- <div appInteractivity tabindex="0">
+  <motive-button>abcd1</motive-button>
+  <motive-button>abcd2</motive-button>
+  <motive-button>abcd3</motive-button>
+  <motive-button>abcd4</motive-button>
+</div> -->
